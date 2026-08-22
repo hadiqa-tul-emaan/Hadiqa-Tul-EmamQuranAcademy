@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<meta name="description" content="Hadiqa tul Emaan Online Quran Academy - Online Quran learning exclusively for girls, women and children with qualified female tutors.">
+
+<title>Hadiqa tul Emaan | Online Quran Academy</title>
+
+<style>
+:root {
+  --green:#0d5b3b;
+  --deep:#073b28;
+  --gold:#c9a227;
+  --light:#fffdf7;
+  --text:#18372b;
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family:Georgia,"Times New Roman",serif;
+  background:var(--light);
+  color:var(--text);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+.container {
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+/* NAVIGATION */
+
+nav {
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,253,247,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #e5d7ad;
+}
+
+.navin {
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:700;
+  color:var(--green);
+}
+
+.brand img {
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
+
+.brand span {
+  font-size:1.05rem;
+}
+
+.links {
+  display:flex;
+  gap:22px;
+  align-items:center;
+  font-family:Arial,sans-serif;
+  font-size:.92rem;
+}
+
+.links a:hover {
+  color:var(--gold);
+}
+
+/* BUTTONS */
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  padding:12px 21px;
+  font-family:Arial,sans-serif;
+  font-weight:700;
+  transition:.2s;
+  border:1px solid var(--gold);
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+}
+
+.btn-gold {
+  background:var(--gold);
+  color:#fff;
+}
+
+.btn-green {
+  background:var(--green);
+  color:#fff;
+}
+
+/* HERO */
+
+.hero {
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 80% 20%,#f2e4b8 0,transparent 35%),
+    linear-gradient(135deg,#fffdf7,#f2ead5);
+  padding:76px 0 68px;
+}
+
+.hero-grid {
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:45px;
+}
+
+.kicker {
+  color:var(--gold);
+  font-family:Arial,sans-serif;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:.82rem;
+}
+
+.badge {
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 15px;
+  border-radius:999px;
+  background:#eaf3ed;
+  color:var(--green);
+  font-family:Arial,sans-serif;
+  font-size:.85rem;
+  font-weight:700;
+}
+
+h1 {
+  font-size:clamp(2.5rem,5vw,4.6rem);
+  line-height:1.02;
+  color:var(--green);
+  margin:12px 0 18px;
+}
+
+h1 em {
+  color:var(--gold);
+  font-style:normal;
+}
+
+.hero p {
+  font-size:1.12rem;
+  max-width:650px;
+  color:#40564b;
+}
+
+.actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.hero-logo {
+  display:flex;
+  justify-content:center;
+}
+
+.hero-logo img {
+  width:min(440px,90%);
+  filter:drop-shadow(0 20px 25px rgba(0,0,0,.15));
+}
+
+/* SECTIONS */
+
+section {
+  padding:78px 0;
+}
+
+.section-head {
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 42px;
+}
+
+.section-head h2 {
+  font-size:2.25rem;
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+.section-head p {
+  color:#5c6d64;
+}
+
+/* COURSES */
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.card {
+  background:#fff;
+  border:1px solid #eadfbf;
+  border-radius:20px;
+  padding:26px;
+  box-shadow:0 10px 30px rgba(33,54,43,.06);
+  transition:.2s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  border-color:#d4bd70;
+}
+
+.icon {
+  font-size:2rem;
+  margin-bottom:12px;
+}
+
+.card h3 {
+  color:var(--green);
+  margin-bottom:8px;
+  font-size:1.15rem;
+}
+
+.card p {
+  color:#637169;
+  font-family:Arial,sans-serif;
+  font-size:.94rem;
+}
+
+/* ABOUT */
+
+.about {
+  background:var(--deep);
+  color:#fff;
+}
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.about h2 {
+  font-size:2.3rem;
+  margin-bottom:14px;
+  color:#fff;
+}
+
+.about p {
+  color:#dce9e2;
+}
+
+.points {
+  display:grid;
+  gap:14px;
+  margin-top:22px;
+}
+
+.point {
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.point b {
+  color:#f0d47a;
+}
+
+/* TRIAL */
+
+.trial {
+  background:linear-gradient(135deg,#f8f1dc,#fff);
+}
+
+.trialbox {
+  border:2px solid #d9c27a;
+  border-radius:26px;
+  padding:38px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:30px;
+}
+
+.trialbox h2 {
+  color:var(--green);
+  font-size:2rem;
+}
+
+/* CONTACT */
+
+.contact {
+  background:#f5f0e3;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+
+.contact-card {
+  background:#fff;
+  border-radius:20px;
+  padding:28px;
+  border:1px solid #e6d9b4;
+}
+
+.contact-card h3 {
+  color:var(--green);
+  margin-bottom:8px;
+}
+
+.contact-card a {
+  color:var(--green);
+  font-family:Arial,sans-serif;
+  font-weight:700;
+  word-break:break-word;
+}
+
+/* FOOTER */
+
+footer {
+  background:#052c1f;
+  color:#dce9e2;
+  padding:42px 0;
+  text-align:center;
+}
+
+footer img {
+  width:78px;
+  margin-bottom:10px;
+}
+
+.socials {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.socials a {
+  border:1px solid #6e875d;
+  border-radius:999px;
+  padding:9px 15px;
+  font-family:Arial,sans-serif;
+  font-size:.9rem;
+}
+
+.small {
+  font:.82rem Arial,sans-serif;
+  color:#aebfb6;
+}
+
+/* TABLET */
+
+@media (max-width:1100px) {
+
+  .container {
+    width:min(94%,1000px);
+  }
+
+  .hero-grid {
+    gap:28px;
+  }
+
+  .cards {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width:850px) {
+
+  .container {
+    width:min(92%,720px);
+  }
+
+  .links {
+    display:none;
+  }
+
+  .navin {
+    min-height:64px;
+  }
+
+  .brand img {
+    width:46px;
+    height:46px;
+  }
+
+  .hero {
+    padding:52px 0 56px;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-grid {
+    grid-template-columns:1fr;
+  }
+
+  .hero-logo {
+    order:-1;
+  }
+
+  .hero-logo img {
+    width:min(360px,75vw);
+  }
+
+  .hero-grid {
+    text-align:center;
+  }
+
+  .hero p {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .actions {
+    justify-content:center;
+  }
+
+  .cards {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .trialbox {
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .section-head h2 {
+    font-size:2rem;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width:600px) {
+
+  .container {
+    width:calc(100% - 28px);
+  }
+
+  section {
+    padding:58px 0;
+  }
+
+  .hero {
+    padding:40px 0 48px;
+  }
+
+  h1 {
+    font-size:clamp(2.25rem,12vw,3.25rem);
+  }
+
+  .hero p {
+    font-size:1rem;
+  }
+
+  .hero-logo img {
+    width:min(300px,78vw);
+  }
+
+  .cards {
+    grid-template-columns:1fr;
+  }
+
+  .card {
+    padding:22px;
+  }
+
+  .about h2 {
+    font-size:1.9rem;
+  }
+
+  .trialbox {
+    padding:28px 20px;
+  }
+
+  .trialbox h2 {
+    font-size:1.7rem;
+  }
+
+  .contact-card {
+    padding:22px;
+  }
+
+  .brand span {
+    font-size:.86rem;
+  }
+
+  .actions .btn {
+    width:100%;
+  }
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width:380px) {
+
+  .brand span {
+    font-size:.78rem;
+  }
+
+  .brand img {
+    width:40px;
+    height:40px;
+  }
+
+  h1 {
+    font-size:2.15rem;
+  }
+
+  .hero-logo img {
+    width:250px;
+  }
+
+  .section-head h2 {
+    font-size:1.75rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+  <div class="container navin">
+
+    <a class="brand" href="#home">
+      <img src="logo.png" alt="Hadiqa tul Emaan logo">
+      <span>Hadiqa tul Emaan</span>
+    </a>
+
+    <div class="links">
+
+      <a href="#home">Home</a>
+
+      <a href="#courses">Courses</a>
+
+      <a href="#about">About</a>
+
+      <a href="#contact">Contact</a>
+
+      <a
+        class="btn btn-gold"
+        href="https://wa.me/923485175651?text=Assalam%20o%20Alaikum%2C%20I%20would%20like%20to%20know%20about%20Quran%20classes."
+        target="_blank">
+        Join Now
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- HERO -->
+
+<header id="home" class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="kicker">
+        Worldwide • Online • Flexible
+      </div>
+
+      <div class="badge">
+        🌸 Exclusively for Females &amp; Kids
+      </div>
+
+      <h1>
+        Learn the Quran with
+        <em>clarity, care &amp; confidence.</em>
+      </h1>
+
+      <p>
+        Welcome to
+        <b>Hadiqa tul Emaan Online Quran Academy</b> —
+        a safe and comfortable online learning space
+        <b>exclusively for girls, women and children</b>,
+        with live one-on-one classes taught by
+        <b>qualified female tutors</b>.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn btn-green"
+          href="https://wa.me/923485175651?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20free%20trial%20Quran%20class."
+          target="_blank">
+          Book Free Trial
+        </a>
+
+        <a
+          class="btn btn-gold"
+          href="#courses">
+          Explore Courses
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-logo">
+
+      <img
+        src="logo.png"
+        alt="Hadiqa tul Emaan Online Quran Academy">
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- COURSES -->
+
+<section id="courses">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <h2>
+        Our Quran &amp; Islamic Courses
+      </h2>
+
+      <p>
+        Beautifully structured lessons for
+        <b>girls, women and children</b>,
+        designed according to each student's age,
+        level and learning goals.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <article class="card">
+
+        <div class="icon">📖</div>
+
+        <h3>Noorani Qaida</h3>
+
+        <p>
+          Build a strong foundation in Arabic letters,
+          sounds and reading rules for beginners and children.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">✨</div>
+
+        <h3>Quran Reading &amp; Tajweed</h3>
+
+        <p>
+          Improve Quran reading, pronunciation,
+          Makharij and Tajweed through focused
+          one-on-one practice.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">🌙</div>
+
+        <h3>Hifz Programme</h3>
+
+        <p>
+          A guided Quran memorization programme
+          with regular revision and steady progress
+          according to the student's pace.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">🕊️</div>
+
+        <h3>Translation &amp; Tafseer</h3>
+
+        <p>
+          Understand selected Quranic verses through
+          translation and simple, age-appropriate explanation.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">🤲</div>
+
+        <h3>Daily &amp; Common Duas</h3>
+
+        <p>
+          Learn important Duas for everyday life,
+          good manners and daily routines.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">🕌</div>
+
+        <h3>Namaz &amp; Salah</h3>
+
+        <p>
+          Learn the essentials of Salah,
+          including important recitations and
+          how to perform it correctly.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">🌱</div>
+
+        <h3>Islamic Manners</h3>
+
+        <p>
+          Help children develop beautiful Islamic
+          manners, good habits and positive everyday character.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="icon">👩‍🏫</div>
+
+        <h3>Personalized Learning</h3>
+
+        <p>
+          Every lesson is adapted to the learner's
+          age, level, pace and individual learning goals.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+  <div class="container about-grid">
+
+    <div>
+
+      <h2>
+        A safe and comfortable Quran learning space
+        for females and kids.
+      </h2>
+
+      <p>
+        Hadiqa tul Emaan Online Quran Academy is created
+        especially for <b>girls, women and children</b>
+        who want to learn the Quran from the comfort
+        and privacy of their home.
+      </p>
+
+
+      <div class="points">
+
+        <div class="point">
+
+          <span>✓</span>
+
+          <div>
+            <b>Female Tutors</b>
+            <br>
+            Learn with qualified and dedicated female tutors.
+          </div>
+
+        </div>
+
+
+        <div class="point">
+
+          <span>✓</span>
+
+          <div>
+            <b>Live One-on-One Classes</b>
+            <br>
+            Personal attention according to every student's needs.
+          </div>
+
+        </div>
+
+
+        <div class="point">
+
+          <span>✓</span>
+
+          <div>
+            <b>Flexible Online Access</b>
+            <br>
+            Learn using a smartphone, tablet or computer
+            with a stable internet connection.
+          </div>
+
+        </div>
+
+
+        <div class="point">
+
+          <span>✓</span>
+
+          <div>
+            <b>Free Trial Session</b>
+            <br>
+            Start with an introductory trial class
+            before joining the academy.
+          </div>
+
+        </div>
+
+
+        <div class="point">
+
+          <span>✓</span>
+
+          <div>
+            <b>Worldwide Learning</b>
+            <br>
+            Girls, women and children can join
+            from different countries and time zones.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <img
+        src="logo.png"
+        alt="Hadiqa tul Emaan logo"
+        style="width:min(390px,90%);display:block;margin:auto;">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FREE TRIAL -->
+
+<section class="trial">
+
+  <div class="container">
+
+    <div class="trialbox">
+
+      <div>
+
+        <h2>
+          Ready to begin your Quran journey?
+        </h2>
+
+        <p>
+          Girls, women and parents of children can
+          contact us on WhatsApp for a free trial
+          session and admission information.
+        </p>
+
+      </div>
+
+
+      <a
+        class="btn btn-green"
+        href="https://wa.me/923485175651?text=Assalam%20o%20Alaikum%2C%20I%20would%20like%20to%20book%20a%20free%20trial%20session."
+        target="_blank">
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <h2>
+        Connect With Us
+      </h2>
+
+      <p>
+        Girls, women and parents can contact
+        the academy through their preferred platform.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+        <h3>📱 WhatsApp</h3>
+
+        <p>
+          For admissions, trial classes
+          and general inquiries.
+        </p>
+
+        <a
+          href="https://wa.me/923485175651"
+          target="_blank">
+          +92 348 5175651
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>▶ YouTube</h3>
+
+        <p>
+          Watch Quran and Islamic
+          learning content.
+        </p>
+
+        <a
+          href="https://www.youtube.com/@voiceofQuran966"
+          target="_blank">
+          @voiceofQuran966
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>◎ Instagram</h3>
+
+        <p>
+          Follow our updates and
+          educational content.
+        </p>
+
+        <a
+          href="https://www.instagram.com/viiceofquran966/"
+          target="_blank">
+          @viiceofquran966
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>🌍 Worldwide Female &amp; Kids Classes</h3>
+
+        <p>
+          Online Quran classes are available
+          internationally for girls, women
+          and children.
+        </p>
+
+        <a
+          href="https://wa.me/923485175651?text=Assalam%20o%20Alaikum%2C%20I%20am%20interested%20in%20female%20and%20kids%20online%20Quran%20classes."
+          target="_blank">
+          Ask About Admission →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <img
+    src="logo.png"
+    alt="Hadiqa tul Emaan logo">
+
+  <h3>
+    Hadiqa tul Emaan Online Quran Academy
+  </h3>
+
+  <p>
+    🌸 Exclusively for Females &amp; Kids
+  </p>
+
+
+  <div class="socials">
+
+    <a
+      href="https://wa.me/923485175651"
+      target="_blank">
+      WhatsApp
+    </a>
+
+    <a
+      href="https://www.youtube.com/@voiceofQuran966"
+      target="_blank">
+      YouTube
+    </a>
+
+    <a
+      href="https://www.instagram.com/viiceofquran966/"
+      target="_blank">
+      Instagram
+    </a>
+
+  </div>
+
+
+  <p class="small">
+    Learn • Recite • Understand • Live with the light of Quran
+  </p>
+
+  <p class="small">
+    © 2026 Hadiqa tul Emaan Online Quran Academy
+  </p>
+
+</footer>
+
+</body>
+  </html>
